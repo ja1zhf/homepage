@@ -1,7 +1,11 @@
+import { Container, Main } from '../styles/global';
+
 export default function NotFound() {
   return (
-    <main>
-      <h1>Not Found!</h1>
-    </main>
+    <Main>
+      <Container>
+        <h1>Not Found!</h1>
+      </Container>
+    </Main>
   )
 }

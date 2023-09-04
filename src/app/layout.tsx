@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Arimo } from 'next/font/google';
 import StyledComponentsRegistry from '../lib/registry';
 import { Container, GlobalStyles } from '../styles/global';
 import Navbar from './navbar/navbar';
 import Scene from './scene/scene';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Arimo({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'ja1z?',
@@ -26,8 +26,8 @@ export default function RootLayout({
           <Navbar />
           <Container>
             <Scene />
-            {children}
           </Container>
+          {children}
         </body>
       </StyledComponentsRegistry>
     </html>

@@ -9,13 +9,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 `;
 
-export const Container = styled.main`
+export const Main = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 30px;
 `;
 
-export const Main = styled.div`
-  width: 580px;
+export const Container = styled.div`
   display: flex;
+  justify-content: center;
 `;
