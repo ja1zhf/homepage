@@ -1,5 +1,6 @@
 import { ShortInfo, ShortInfoAvatar, ShortInfoTitle, Status } from '../styles/main';
 import { Main, Container } from '../styles/global';
+import Article from './article';
 
 const data = {
   name: "ja1z?",
@@ -9,19 +10,21 @@ const data = {
 
 export default function Home() {
   return (
-    <Main>
-      <Container>
-        <Status>{data.status}</Status>
-      </Container>
-      <Container>
-        <ShortInfo>
-          <ShortInfoTitle>
-            <h2>{data.name}</h2>
-            <p>{data.bio}</p>
-          </ShortInfoTitle>
-          <ShortInfoAvatar src='/avatar.jpg' />
-        </ShortInfo>
-      </Container>
-    </Main>
+    <Article>
+      <Main>
+        <Container>
+          <Status>{data.status}</Status>
+        </Container>
+        <Container>
+          <ShortInfo>
+            <ShortInfoTitle>
+              <h2>{data.name}</h2>
+              <p>{data.bio}</p>
+            </ShortInfoTitle>
+            <ShortInfoAvatar src='/avatar.jpg' />
+          </ShortInfo>
+        </Container>
+      </Main>
+    </Article>
   )
 }

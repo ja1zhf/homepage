@@ -1,11 +1,14 @@
 import { Container, Main } from '../../styles/global';
+import Article from '../article';
 
-export default function Home() {
+export default function Works() {
   return (
-    <Main>
-      <Container>
-        <h1>Works!</h1>
-      </Container>
-    </Main>
+    <Article>
+      <Main>
+        <Container>
+          <h1>Works!</h1>
+        </Container>
+      </Main>
+    </Article>
   )
 }
